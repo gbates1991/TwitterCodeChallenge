@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  TestWork
+//
+//  Created by Иван on 19/06/15.
+//  Copyright (c) 2015 //  Created by Greg Bates on 07/19/15.
+//  Copyright (c) 2015 Greg. All rights reserved.. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "WebService.h"
+
+#endif
+
+#define API_URL @"https://api.twitter.com/1.1/"
+
+#ifdef DEBUG
+#define DMLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#else
+#define DMLog(...) do { } while (0)
+#endif
